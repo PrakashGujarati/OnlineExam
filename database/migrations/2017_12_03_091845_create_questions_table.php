@@ -15,7 +15,7 @@ class CreateQuestionsTable extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unSignedInteger('topic_id');
+            $table->unsignedInteger('topic_id');
             $table->text('question');
             $table->string('a');
             $table->string('b');
@@ -25,7 +25,7 @@ class CreateQuestionsTable extends Migration
             $table->string('mark')->default(0);
             $table->text('code_snippet')->nullable();
             $table->text('answer_exp')->nullable();         
-            $table->foreign('topic_id')->references('id')->on('topics')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('topic_id')->references('id')->on('topics');
             $table->timestamps();
         });
     }
