@@ -301,7 +301,7 @@ CREATE TABLE `settings` (
   `id` int(10) UNSIGNED NOT NULL,
   `logo` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `favicon` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `welcome_txt` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Quick Quiz',
+  `welcome_txt` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'OnlineExam',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -311,7 +311,7 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`id`, `logo`, `favicon`, `welcome_txt`, `created_at`, `updated_at`) VALUES
-(1, 'logo.png', 'icon.ico', 'Quick Quiz', NULL, NULL);
+(1, 'logo.png', 'icon.ico', 'OnlineExam', NULL, NULL);
 
 -- --------------------------------------------------------
 

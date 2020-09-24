@@ -18,7 +18,7 @@
             <th>#</th>
             <th>Student Name</th>
             <th>Mobile No.</th>          
-            <th>Quiz</th>
+            <th>Exam</th>
             <th>Marks Got</th>
             <th>Total Marks</th>
           </tr>

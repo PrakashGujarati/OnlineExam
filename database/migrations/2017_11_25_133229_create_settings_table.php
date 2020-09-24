@@ -17,7 +17,7 @@ class CreateSettingsTable extends Migration
             $table->bigIncrements('id');
             $table->string('logo')->nullable();
             $table->string('favicon')->nullable();
-            $table->string('welcome_txt')->default('Quick Quiz');
+            $table->string('welcome_txt')->default('OnlineExam');
             $table->timestamps();
         });
     }

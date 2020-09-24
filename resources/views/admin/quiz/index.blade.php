@@ -1,5 +1,5 @@
 @extends('layouts.admin', [
-  'page_header' => 'Quiz',
+  'page_header' => 'Exam',
   'dash' => '',
   'quiz' => 'active',
   'users' => '',
@@ -11,7 +11,7 @@
 
 @section('content')
   <div class="margin-bottom">
-    <button type="button" class="btn btn-wave" data-toggle="modal" data-target="#createModal">Add Quiz</button>
+    <button type="button" class="btn btn-wave" data-toggle="modal" data-target="#createModal">Add Exam</button>
   </div>
   <!-- Create Modal -->
   <div id="createModal" class="modal fade" role="dialog">

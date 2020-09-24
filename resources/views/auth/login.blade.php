@@ -23,7 +23,6 @@
             <a href="{{url('/')}}" title="{{$setting->welcome_txt}}"><img src="{{asset('/images/logo/'.$setting->logo)}}" class="login-logo img-responsive" alt="{{$setting->welcome_txt}}"></a>
           @endif
         </div>
-        <h4 class="user-register-heading text-center">Login</h4>
         <div class="row">
         
          
@@ -32,7 +31,7 @@
         <form class="form login-form" method="POST" action="{{ route('login') }}">
           {{ csrf_field() }}
           <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-          <input id="email" type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+          <input id="email" type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="Enter Email" required autofocus>
             @if ($errors->has('email'))
               <span class="help-block">
                 <strong>{{ $errors->first('email') }}</strong>
@@ -58,12 +57,8 @@
           <div class="form-group">
             <button type="submit" class="btn btn-wave">
                 Login
-            </button>
-            <p class="messege text-center">Not registered? <a href="{{url('/register')}}" title="Create An Account">Create an account</a></p>
-          </div>
-          <div class="form-group text-center">
-            <a href="{{url('/password/reset')}}" title="Forgot Password">Forgot Password?</a>
-          </div>
+            </button>            
+          </div>        
         </form>
       </div>
     </div>

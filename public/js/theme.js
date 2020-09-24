@@ -1,4 +1,4 @@
-/** Quick Quiz – Laravel Quiz and Exam System
+/** OnlineExam – Laravel Quiz and Exam System
  *
  * This file contains all template JS functions
  *

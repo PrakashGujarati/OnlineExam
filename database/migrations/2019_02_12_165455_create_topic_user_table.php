@@ -15,8 +15,8 @@ class CreateTopicUserTable extends Migration
     {
         Schema::create('topic_user', function (Blueprint $table) {
             $table->bigIncrements('id');   
-            $table->integer('user_id')->unsigned();
-            $table->integer('topic_id')->unsigned();
+            $table->unSignedInteger('user_id');
+            $table->unSignedInteger('topic_id');
             $table->string('transaction_id')->nullable();
             $table->boolean('status')->nullable();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
