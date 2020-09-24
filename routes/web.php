@@ -31,7 +31,7 @@ Auth::routes();
 // Route::get('login/o_auth/facebook  ', 'Auth\LoginController@redirectToProvider');
 // Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallback');
 
-
+Route::get('/createusers', 'AdminUsersController@create');
 
 /*Social Login*/
 Route::get('login/{service}', 'Auth\LoginController@redirectToProvider')->name('sociallogin');
